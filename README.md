@@ -16,9 +16,7 @@ PI Setup
 3. Install/configure/test pi-blaster
 
    https://github.com/sarfata/pi-blaster
-   Optional/disused:
-   For node.js https://github.com/sarfata/pi-blaster.js
-
+   
 4. Connect peripherals to your PI's GPIO pins
 
 Toybox Setup
@@ -26,13 +24,18 @@ Toybox Setup
 1. Install toybox binaries and stuff (on PI)
 
    mkdir /opt/toyboxrpi
+   
    cp ToyboxRPI.jar /opt/toyboxrpi
+   
    cp toybridge.cfg /opt/toyboxrpi
 
    ...or build from source (pending)
    
 2. Configure toybridge.cfg
+ 
+
    vi /opt/toyboxrpi/toybridge.cfg
+   
    See _URL_ for videos
 
 Test Toybox
@@ -42,6 +45,7 @@ Test Toybox
    toybox:
 
      cd /opt/toyboxrpi
+     
      java -jar ToyboxRPI.jar
 
    You should see the toybox announce itself in chat.
@@ -53,6 +57,7 @@ Test Toybox
    Example: I have GPI pin 18 connected to a servo.
 
      18=0.15;
+     
      18=0.53;
 
    ...should move the servo to 15% and 53% of its range.
@@ -68,6 +73,7 @@ Connect Your Chatbot
    Example: I still have GPIO 18 connected to a servo.
 
    Chatbot command:    !servoleft  
+   
    Chatbot response:   18=0.15; 
 
    Don't forget, low-level commands must end with a semicolon!
@@ -82,4 +88,9 @@ Connect Your Chatbot
 Additional Notes
 -----------------------------------------------
 Currently disused but optional
+
    https://github.com/Pi4J/pi4j/
+
+   Optional/disused:
+   
+   For node.js https://github.com/sarfata/pi-blaster.js
