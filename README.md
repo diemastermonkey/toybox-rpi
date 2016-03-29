@@ -1,6 +1,15 @@
 # toybox-rpi
-Raspberry PI incarnation of the Internet Toybox audience-controlled stage effects system
+Raspberry PI incarnation of the Internet Toybox audience-controlled stage effects system.
+Currently in early development.
 
+This version basically 
+
+  logs-into Twitch chat
+  
+  Accepts pi-blaster syntax from users or chatbots
+  
+  Forwards them to pi-blaster device (and your peripherals)
+  
 # From toyboxrpi-setup.txt
 
 Internet Toybox Raspberry PI Version ("toyboxrpi")
