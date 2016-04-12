@@ -8,6 +8,7 @@ PI Setup
 -----------------------------------------------
 1. Install Raspian (lite is fine)
 2. Ensure Java is installed and operational
+sudo apt-get update && sudo apt-get install oracle-java7-jdk
 3. Install/configure/test pi-blaster
    https://github.com/sarfata/pi-blaster
 
